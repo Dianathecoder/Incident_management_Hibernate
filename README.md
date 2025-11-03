@@ -1,8 +1,9 @@
 # Incident Management Hibernate
 
-##  Project Description
+## 📖 Project Description
 
 **Incident Management Hibernate** is a Java desktop/CLI application designed to manage incidents within an organization.  
+
 The project uses:
 
 - **Java 17** and **Hibernate** for data persistence.
@@ -10,15 +11,15 @@ The project uses:
 - **Adminer** for web-based MySQL administration.
 - **Docker and Docker Compose** for easy deployment of the full environment.
 
-Key features:
+**Key features:**
 
 - Employee management (create, update, delete, change password).
 - Recording and querying incidents between employees.
-- User validation and session management through Hibernate.
+- User validation and session management via Hibernate.
 
 ---
 
-##  Technologies Used
+## 🛠 Technologies Used
 
 | Technology       | Purpose                                         |
 |-----------------|------------------------------------------------|
@@ -30,19 +31,22 @@ Key features:
 
 ---
 
-##  How to Run the Environment
+## 📦 How to Run the Environment
 
-1. Make sure **Docker** and **Docker Compose** are installed on your machine.
+1. Make sure **Docker** and **Docker Compose** are installed.
 2. From the project root, run:
 
 ```bash
 docker compose up -d --build
 
-## 🌐 Servicios
+| Service     | URL / Address                                  | Comment                                                               |
+| ----------- | ---------------------------------------------- | --------------------------------------------------------------------- |
+| Adminer | [http://localhost:8080](http://localhost:8080) | Web interface to manage MySQL. Connects internally to `db` container. |
+| Java App | [http://localhost:8082](http://localhost:8082) | Incident management application using Hibernate.                      |
+| MySQL   | N/A from host (optional: 3308)                 | Internally accessible as `db:3306` on the Docker network `backend`.   |
 
-| Servicio        | Dirección en navegador                         | Comentario                                     |
-| --------------- | ---------------------------------------------- | ---------------------------------------------- |
-| Adminer         | [http://localhost:8000](http://localhost:8000) | Acceso a PostgreSQL vía web                    |
-| Spring Boot App | [http://localhost:8081](http://localhost:8081/swagger-ui/index.html#/) | Si habilitas el servicio `app`                 |
-| PostgreSQL      | N/A desde host local, salvo que abras `5432`   | Internamente accesible como `db-postgres:5432` |
+| User  | Password  | Permissions                                     |
+| ----- | --------- | ----------------------------------------------- |
+| admin | adminpass | Full privileges                                 |
+| user  | p@ssword  | SELECT, INSERT, UPDATE on `incident_management` |
 
