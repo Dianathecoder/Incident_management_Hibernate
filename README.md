@@ -37,3 +37,10 @@ Key features:
 
 ```bash
 docker compose up -d --build
+
+| Service          | URL / Address                                  | Comment                                                           |
+|-----------------|-----------------------------------------------|------------------------------------------------------------------|
+| Adminer          | [http://localhost:8080](http://localhost:8080) | Access MySQL via web. Internal server: `db`                      |
+| Java Application | [http://localhost:8082](http://localhost:8082) | Incident management application using Hibernate                  |
+| MySQL            | N/A from host (optional: 3308)               | Internally accessible as `db:3306` on the Docker network `backend` |
+
