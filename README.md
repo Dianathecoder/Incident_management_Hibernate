@@ -41,9 +41,9 @@ docker compose up -d --build
 
 | Service     | URL / Address                                  | Comment                                                               |
 | ----------- | ---------------------------------------------- | --------------------------------------------------------------------- |
-| Adminer | [http://localhost:8080](http://localhost:8080) | Web interface to manage MySQL. Connects internally to `db` container. |
-| Java App | [http://localhost:8082](http://localhost:8082) | Incident management application using Hibernate.                      |
-| MySQL   | N/A from host (optional: 3308)                 | Internally accessible as `db:3306` on the Docker network `backend`.   |
+| Adminer     | [http://localhost:8080](http://localhost:8080) | Web interface to manage MySQL. Connects internally to `db` container. |
+| Java App    | [http://localhost:8082](http://localhost:8082) | Incident management application using Hibernate.                      |
+| MySQL       | N/A from host (optional: 3308)                 | Internally accessible as `db:3306` on the Docker network `backend`.   |
 
 | User  | Password  | Permissions                                     |
 | ----- | --------- | ----------------------------------------------- |
