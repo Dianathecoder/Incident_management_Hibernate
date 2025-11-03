@@ -14,7 +14,7 @@ import HibernateConnection.hibernate_connection;
 public class Incidents_management {
 	
     public static void main(String[] args) {
-    	 System.out.println("🚀 Aplicación de gestión de incidencias iniciada correctamente.");
+    	 System.out.println("Aplicación de gestión de incidencias iniciada correctamente.");
          // Opcional: probar conexión a Hibernate
          try {
              hibernate_connection.getSessionFactory();

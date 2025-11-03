@@ -9,9 +9,6 @@ import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-/**
- * Employee methods for CRUD operations using Hibernate
- */
 public class EmployeeMethods {
 
     public static Session session = hibernate_connection.getSessionFactory().openSession(); // get the session

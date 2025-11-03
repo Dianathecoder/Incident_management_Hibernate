@@ -10,9 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-/**
- * Employee entity mapped to "employees" table
- */
+
 @Entity
 @Table(name = "employees")
 public class Employee {

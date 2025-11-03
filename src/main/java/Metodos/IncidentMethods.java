@@ -8,9 +8,6 @@ import org.hibernate.Transaction;
 
 import HibernateConnection.hibernate_connection;
 
-/**
- * Incident methods for CRUD operations using Hibernate
- */
 public class IncidentMethods {
 
     public static Session session = hibernate_connection.getSessionFactory().openSession();
