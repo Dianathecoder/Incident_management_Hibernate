@@ -1,6 +1,6 @@
 # Incident Management Hibernate
 
-## 📖 Project Description
+## Project Description
 
 **Incident Management Hibernate** is a Java desktop/CLI application designed to manage incidents within an organization.  
 
@@ -19,7 +19,7 @@ The project uses:
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 | Technology       | Purpose                                         |
 |-----------------|------------------------------------------------|
@@ -31,7 +31,7 @@ The project uses:
 
 ---
 
-## 📦 How to Run the Environment
+## How to Run the Environment
 
 1. Make sure **Docker** and **Docker Compose** are installed.
 2. From the project root, run:
